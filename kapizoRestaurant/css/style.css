@@ -1,0 +1,463 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Catamaran','Noto Sans JP', sans-serif;
+    color: #333;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/******************************* header ****************************** */
+
+.headerWrap{
+    max-width: 1280px;
+    height: 128px;
+    margin: 0 auto;
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2rem;
+}
+
+.headerWrap h1{
+    width: clamp(100px , 100% , 300px);
+}
+
+.headerWrap nav ul{
+    display: flex;
+    gap:2rem;
+}
+
+/******************************* TOP Page ****************************** */
+
+.topContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+#topSec01{
+    width: 35%;
+    height: auto;
+}
+
+.topSec01_box{
+    width: 100%;
+    height: calc(100vh - 128px); /* 高さをビューポート単位で高さピッタリに合わせて、そこからheaderの高さをマイナス */
+    background-image: url(../images/top_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 2rem;/* 中に入れているロゴ画像の上をpaddingで2文字分開け*/
+}
+
+.topSec01_box img{
+    width:clamp(200px,50%,300px);/* メモ。真ん中のwidth:50%設定で200〜300pxの間を伸縮*/
+    height: auto;
+}
+
+#topSec02{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#topSec02 ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:1rem;
+}
+
+#topSec02 ul li{
+    width: calc(100% / 2 - 0.5rem);
+    height: auto;
+    background-color: #f6f5f5;
+}
+
+#topSec02 ul li a{
+    display: block;/* インライン要素のaタグを箱のように扱っているので、display:blockでブロック要素に変換。*/
+}
+
+#topSec02 ul li:nth-child(1) a{
+    width: 100%;
+    height: 100%;
+    /* TOPへのリンクはSVG画像しか入っていないので、幅と高さを指定して、flexboxを使って中央揃え */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topSec02 ul li:nth-child(1) a img{
+    width: 70%;
+    height: auto;
+}
+
+#topSec02 ul li h2{
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+
+/******************************* CONCEPT Page ****************************** */
+
+
+
+.conceptHeader h2 span{
+    background-image: linear-gradient(135deg, #e6be5d 0%, #9ac78e 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;  
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.conceptHeader h2{
+    margin-top: 2rem;
+}
+
+.conceptHeader h3{
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+}
+
+.conceptHeader p,
+.conceptText p{
+    line-height: 2;
+}
+
+
+.conceptHeader{
+    text-align: center;
+}
+
+.conceptHeader p{
+    margin-bottom: 2rem;
+}
+
+main{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.conceptContainerImage1{
+    background-image: url(../images/concept_ph01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 100%;
+    aspect-ratio: 5/7;
+}
+
+.conceptContainerImage2{
+    background-image: url(../images/concept_ph02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 100%;
+    aspect-ratio: 5/7;
+}
+
+.conceptContainerImage3{
+    background-image: url(../images/concept_ph03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 35%;
+    height: 100%;
+    aspect-ratio: 5/7;
+}
+
+.conceptBox{
+    display: flex;
+    align-items: center;
+    gap: 15%;
+    margin-bottom: 3rem;
+}
+
+.conceptText{
+    width: 40rem;
+    text-align: center;
+}
+
+.conceptText h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+footer{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img{
+    width: 200px;
+}
+
+.footerImageLogo{
+    margin-top: 66px;
+}
+
+.footerImageMountain{
+    padding-bottom: 66px;
+}
+
+/******************************* MENU Page ****************************** */
+
+.menuHeader h2 span{
+    background-image: linear-gradient(135deg, #e6be5d 0%, #9ac78e 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;  
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.menuHeader h2 {
+    margin-top: 2rem;
+}
+
+.menuHeader h3{
+    font-size: 1.25rem;
+    margin: 2rem 0;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.menuHeader{
+    text-align: center;
+}
+
+.menuHeader p{
+    margin-bottom: 3rem;
+    line-height: 2;
+}
+
+.menuBox{
+    max-width: 1280px;
+    margin-bottom: 6rem;
+    padding: 4%;
+}
+
+.menuItemSalad h2,
+.menuItemMain h2,
+.menuItemPasta h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 3rem 0;
+}
+
+.menuItemSalad h2,
+.menuItemMain h2,
+.menuItemPasta h2{
+    text-align: center;
+}
+
+.menuItemSalad ul,
+.menuItemMain ul,
+.menuItemPasta ul{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.menuItemSalad ul li img,
+.menuItemMain ul li img,
+.menuItemPasta ul li img{
+    max-width: 98%;
+    height: auto;
+}
+
+
+/******************************* INFO Page ****************************** */
+
+.infoHeader h2 span{
+    background-image: linear-gradient(135deg, #e6be5d 0%, #9ac78e 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;  
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.infoHeader h2 {
+    margin-top: 2rem;
+}
+
+.infoHeader h3{
+    font-size: 1.25rem;
+    margin: 2rem 0;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.infoHeader{
+    text-align: center;
+}
+
+.infoHeader p{
+    line-height: 2;
+}
+
+#infoSec01 h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#infoSec01 p{
+    margin: 1rem 0; 
+    line-height: 1.5;
+}
+
+.googleMap{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/3;
+}
+
+.googleMap iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#infoSec02 h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/* 下記はflexGrid */
+
+
+.flexGridItem01 img,
+.flexGridItem02 img{
+    max-width: 100%;
+    height: 300px;
+}
+
+.flexGrid1 img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flexGrid2 img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flexGrid3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flexGrid4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flexGrid1{
+    width: 50%;
+}
+
+.flexGrid2{
+    width: 40%;
+}
+
+.flexGrid3{
+    width: 100%;
+    height: 150px;
+}
+
+.flexGrid4{
+    width: 100%;
+    height: 150px;
+}
+
+.flexGridItemA{
+    display: flex;
+    width: 50%;
+}
+
+.flexGridItemB{
+    width: 60%;
+}
+
+.flexGridItem01{
+    display: flex;
+}
+
+.flexGrid5{
+    width: 50%;
+}
+
+.flexGrid5 img{
+    width: 100%;
+    /* height: 300px; */
+    object-fit: cover;
+    object-position: center;
+}
+
+.flexGrid6 img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flexGrid7 img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flexGridItem02{
+    display: flex;
+}
+
+.flexGridItemC{
+    display: flex;
+    width: 50%;
+}
+
+.flexGrid6{
+    width: 40%;
+}
+
+.flexGrid7{
+    width: 60%;
+}
+
+.flexGrid{
+    margin-bottom: 3rem;
+}

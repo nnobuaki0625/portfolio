@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+@media (width < 920px) {
+
+    /******************************* header ****************************** */
+
+    .headerWrap {
+        height: calc(118.99px + 1rem + 1rem + 1rem);
+        /* ロゴ画像の高さ119px + 1rem + ナビゲーションの高さ1rem + 下の余白1rem */
+        /* 結果、166.99px */
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    /******************************* TOP Page ****************************** */
+
+    .topContainer {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    #topSec01 {
+        width: 100%;
+    } /* 元々のWidthを解除するために100%を挿入*/
+
+    .topSec01_box{
+        height: calc(100vh - 166.99px);
+    } /* ヘッダーの高さを調整 */
+
+    
+    #topSec02 {
+        width: 100%;
+    }
+
+    #topSec02 ul {
+        gap: 3rem;
+    }
+
+    #topSec02 ul li {
+        width: calc(100% - 4rem);
+    }
+
+
+    #topSec02 ul li:nth-child(1) {
+        display: none;
+    }
+    
+    #topSec02 ul li a img {
+        width: 100%;
+    }
+
+
+    /******************************* CONCEPT Page ****************************** */
+
+.conceptBox{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4%;
+}
+
+.conceptContainerImage1, .conceptContainerImage2, .conceptContainerImage3{
+    width: 100%;
+}
+
+.conceptContainerImage1,
+.conceptContainerImage2,
+.conceptContainerImage3{
+    aspect-ratio: 16/9;
+    background-position: bottom;
+}
+
+.conceptText{
+    width: 100%;
+}
+
+
+    /******************************* MENU Page ****************************** */
+
+    .menuBox{
+        padding: 4%;
+    }
+
+    .menuItemSalad ul,
+    .menuItemMain ul,
+    .menuItemPasta ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6%;
+}
+
+.menuItemSalad ul li,
+.menuItemMain ul li,
+.menuItemPasta ul li{
+    width: 44%;
+    height: auto;
+    margin: 2% 0;
+}
+
+    /******************************* INFO Page ****************************** */
+
+    .infoBox{
+        padding: 4%;
+    }
+
+    .googleMap{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/7;
+    }
+
+    .flexGridItem01{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexGrid1{
+        width: 100%;
+    }
+
+    .flexGridItemA{
+        width: 100%;
+    }
+
+    .flexGridItem02{
+        flex-direction: column;
+    }
+
+    .flexGrid5{
+        width: 100%;
+    }
+
+    .flexGridItemC{
+        width: 100%;
+    }
+
+}
+
+/* width < 920px */

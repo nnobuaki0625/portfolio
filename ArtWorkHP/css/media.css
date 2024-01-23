@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+@media(width < 600px){
+
+    .mainVisualSp img{
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .mainVisualSp{
+        max-width: 100%;
+        margin-bottom: 4rem;
+    }
+    
+    .mainVisualSp{
+        display: block;
+    }
+
+    .mainVisualPc{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        margin-bottom: 1rem;
+    }
+
+    .innerWrap{
+        padding: 0 4%;
+    }
+
+    .boxImage{
+        width: 100%;
+    }
+
+    .boxWoraksA,
+.boxWoraksB{
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.boxItemNews{
+    flex-direction: column;
+    padding: 1rem 1rem;
+    gap: 0.5rem;
+}
+    
+}

@@ -1,0 +1,394 @@
+@charset "utf-8";
+
+/* 共通設定 */
+img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/* 固定背景 */
+.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #F8F5EC;
+    z-index: -1;
+}
+
+.bgitem{
+    position: absolute;
+    animation: bounce 1.5s infinite alternate ease-in-out;
+    /* alternateは動作を繰り返す記述 */
+    /* bounceのところは名前の指定 */
+    /* 永遠に動こかしたい場合はinfiniteを記述 */
+}
+
+/* キーフレームアニメーション */
+@keyframes bounce{
+    from{
+        transform: translateY(0);
+        /* translateYの0はその位置にいるということ */
+        /* トランスフォームは一度かけるとショートハンドでしか追加の動きは記述できない */
+    }
+    to{
+        transform: translateY(20px);
+        /* 20ピクセル下に移動する記述 */
+    }
+}
+
+/* ひよこの散らばりを調整していく */
+/* ウインドウの伸び縮みがあるので、％指定でtopとleftを調整していく */
+.b1{
+    /* 親要素に対する幅 */
+    width: 12%;
+    /* マックスwidthを設定したら大きくなりすぎることを防げる */
+    top: -5%;
+    left: 10%;
+    animation-delay: 1.3s;
+}
+
+.b1 img{
+    transform: rotate(15deg) scale(-1,1);
+    /* scaleで指定する動きとしてはx方向とy方向の倍率をいじっている。 */
+    /* -1で入れると反転し出す */
+    /* 左と右で縦方法と横方向に反転になる */
+}
+.b2{
+    /* 親要素に対する幅 */
+    width: 10%;
+    top: 10%;
+    left: 80%;
+    animation-delay: 1s;
+}
+
+.b2 img{
+    transform: rotate(4deg);
+}
+
+.b3{
+    /* 親要素に対する幅 */
+    width: 7%;
+    top: 38%;
+    left: 72%;
+    animation-delay: 0.95s;
+}
+
+.b3 img{
+    transform: rotate(-10deg);
+}
+
+.b4{
+    /* 親要素に対する幅 */
+    width: 4%;
+    top: 50;
+    left: 5%;
+    animation-delay: 0.2s;
+}
+
+.b4 img{
+    transform: rotate(-12deg);
+}
+
+.b5{
+    /* 親要素に対する幅 */
+    width: 6%;
+    top: 80%;
+    left: 80%;
+    animation-delay: 1.2s;
+}
+
+.b5 img{
+    transform: rotate(-5deg);
+}
+
+.b6{
+    /* 親要素に対する幅 */
+    width: 2%;
+    top: 3%;
+    left: 90%;
+    animation-delay: 0s;
+}
+
+.b6 img{
+    transform: rotate(6deg);
+}
+
+.b7{
+    /* 親要素に対する幅 */
+    width: 9%;
+    top: 20%;
+    left: -5%;
+    animation-delay: 0.8s;
+}
+
+.b7 img{
+    transform: rotate(-7deg);
+}
+
+.b8{
+    /* 親要素に対する幅 */
+    width: 11%;
+    top: 90%;
+    left: 70%;
+    animation-delay: 0.5s;
+}
+
+.b8 img{
+    transform: rotate(20deg);
+}
+
+.b9{
+    /* 親要素に対する幅 */
+    width: 10%;
+    top: 80%;
+    left: 5%;
+    animation-delay: 0.4s;
+}
+
+.b9 img{
+    transform: rotate(-3deg);
+}
+
+.b10{
+    /* 親要素に対する幅 */
+    width: 10%;
+    top: 60%;
+    left: 25%;
+    animation-delay: 1.5s;
+}
+
+.b10 img{
+    transform: rotate(17deg);
+}
+
+.b11{
+    /* 親要素に対する幅 */
+    width: 7%;
+    top: 5%;
+    left: 92%;
+    animation-delay: 1.5s;
+}
+
+.b11 img{
+    transform: rotate(24deg) scale(-1,1);
+}
+
+.b12{
+    /* 親要素に対する幅 */
+    width: 7%;
+    top: 58%;
+    left: 9%;
+    animation-delay: 1.5s;
+}
+
+.b12 img{
+    transform: rotate(24deg) scale(-1,1);
+}
+
+.b13{
+    /* 親要素に対する幅 */
+    width: 5%;
+    top: 30%;
+    left: 20%;
+    animation-delay: 2.4s;
+}
+
+.b13 img{
+    transform: rotate(24deg) scale(1,1);
+}
+
+.b14{
+    /* 親要素に対する幅 */
+    width: 10%;
+    top: 85%;
+    left: 92%;
+    animation-delay: 0.4s;
+}
+
+.b14 img{
+    transform: rotate(8deg) scale(-1,1);
+}
+
+.b15{
+    /* 親要素に対する幅 */
+    width: 8%;
+    top: 50%;
+    left: 87%;
+    animation-delay: 3.0s;
+}
+
+.b15 img{
+    transform: rotate(-10deg);
+}
+
+.b16{
+    /* 親要素に対する幅 */
+    width: 3%;
+    top: 20%;
+    left: 26%;
+    animation-delay: 3.0s;
+}
+
+.b16 img{
+    transform: rotate(-10deg);
+}
+
+.b17{
+    /* 親要素に対する幅 */
+    width: 11%;
+    top: 32%;
+    left: 8%;
+    animation-delay: 0.7s;
+}
+
+.b17 img{
+    transform: rotate(10deg);
+}
+
+.b18{
+    /* 親要素に対する幅 */
+    width: 7%;
+    top: 7%;
+    left: 64%;
+    animation-delay: 2.9s;
+}
+
+.b18 img{
+    transform: rotate(-26deg) scale(-1, 1);
+}
+
+/* メインコンテンツ */
+/* こちらも最初に作成スマホ用の背景。widthとmax-widthで幅を指定している */
+.contentsWrapper{
+    width: 100%;
+    max-width: 500px;
+    /* height: 200vh; */
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.314)
+}
+
+.mainVisual{
+    width: 100%;
+    height: 50vh;
+    background: url(../images/duck-main.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 2em;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+h3{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.about p{
+    width: 65%;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* slideセクション */
+
+.slideWrapper{
+    padding: 100px 0;
+    overflow-x: hidden;
+}
+
+.swiper{
+    overflow: visible;
+}
+
+.swiper .cardItem{
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid #21212F;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 #fff, 5px 5px 0 1px #21212F ;
+    /* boxシャドウはダブルでかけることができる */
+    /* カンマを入れて複製 */
+    opacity: 0.6;
+    transform: scale(0.8);
+    transition: 0.3s;
+}
+
+.swiper .swiper-slide-active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.cardImg{
+    border-radius: 5px;
+    overflow: hidden;
+    /* img要素としては角が残ってしまう */
+}
+/* ボーダーラディウスはでかい数字で入力すると丸くなる */
+
+.swiper-button-next{
+    background: #ffF;
+    border: 1px solid #21212F;
+    border-radius: 50px;
+    /* ラディウスが丸いからまん丸になる */
+    width: 30px;
+    height: 30px;
+    top: auto;
+    bottom: -50px;
+    /* left: auto; */
+    right: 20px;
+}
+
+.swiper-button-next::after{
+    content: "▶︎";
+    font-size: 18px;
+    color: #21212F;
+}
+
+.swiper-button-prev{
+    background: #ffF;
+    border: 1px solid #21212F;
+    border-radius: 50px;
+    /* ラディウスが丸いからまん丸になる */
+    width: 30px;
+    height: 30px;
+    top: auto;
+    bottom: -50px;
+    left: auto;
+    right: 100px;
+}
+
+.swiper-button-prev::after{
+    content: "◀︎";
+    font-size: 18px;
+    color: #21212F;
+}
+
+
+/* footerセクション */
+
+footer{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #21212F;
+    color: #F8F5EC;
+}
