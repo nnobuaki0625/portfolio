@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@media (width < 660px){
+
+    .menuItemOutline{
+        display: flex;
+        flex-direction: column;
+    }
+}
