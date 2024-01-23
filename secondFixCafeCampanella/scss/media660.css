@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media (width < 660px){
+@media (max-width: 660px){
 
     .menuItemOutline{
         display: flex;
